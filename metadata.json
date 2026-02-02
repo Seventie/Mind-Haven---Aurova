@@ -1,0 +1,7 @@
+{
+  "name": "TENAWell - Empathetic Mental Wellness",
+  "description": "A safe, anonymous, and stigma-free digital mental health platform for women and youth, featuring AI-assisted journaling, emotional analysis, and supportive chat.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
