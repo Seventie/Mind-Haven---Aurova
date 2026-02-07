@@ -1,61 +1,117 @@
-# Mind Haven - Aurora
+# Aurova (Mind Haven) – Digital Mental Health Access for Women & Youth
 
-Mind Haven - Aurora is a compassionate mental health platform built for people who feel stuck, unheard, or unable to speak openly about what they are going through. It creates a safe space where users can stay anonymous, connect with others facing similar struggles, and receive gentle, empathetic guidance without exposing their identity.
+Aurova is a privacy-first mental health support platform designed for women and youth who want help without exposing their identity. The platform connects patients, licensed professionals, and anonymous peers in one safe environment for journaling, empathetic AI support, and consent-based care. It is built to reduce stigma, offer early emotional support, and provide clinical insights only when users choose to share them.
 
-## Mission
+## Table of Contents
+- [Mission & Problem Statement](#mission--problem-statement)
+- [What Aurova Delivers](#what-aurova-delivers)
+- [Core Use Cases](#core-use-cases)
+- [Clinical Significance & Safety](#clinical-significance--safety)
+- [System Architecture](#system-architecture)
+- [Technology Stack](#technology-stack)
+- [Module Overview](#module-overview)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Contributors](#contributors)
 
-Reduce stigma and make emotional support more accessible by offering a private, human-first place to reflect, connect, and heal.
+## Mission & Problem Statement
+Women and youth often delay or avoid mental health support because of stigma, fear of judgment, and lack of privacy. Aurova provides an anonymous-first experience where users can share emotions, receive empathetic guidance, and connect to professionals when they are ready, all while retaining control over their identity and data.
 
-## What Makes Mind Haven Different
+## What Aurova Delivers
+- **Anonymous onboarding with consent controls** for identity-sharing and data access.
+- **Private journaling** with AI-powered emotional analysis and trend tracking.
+- **Empathetic AI assistant** for check-ins, reflection prompts, and supportive responses.
+- **Professional booking & doctor dashboards** with pre-/post-therapy insights.
+- **Threat detection & safety alerts** for high-risk content in journals or chats.
+- **Community circles** for private peer support around similar challenges.
+- **Wellness guidance** including medically informed yoga practices and coping routines.
+- **Emergency contact guidance** to quickly route help when needed.
+- **Book and resource recommendations** tailored to emotional trends and needs.
+- **Clinical progress reports** to aid therapist follow-ups (only with consent).
 
-- **Anonymous-first design:** Users can participate without revealing their identity.
-- **Peer connection:** Community circles connect people dealing with similar challenges.
-- **Empathetic AI support:** A 24/7 listener for reflection, journaling, and emotional check-ins.
-- **Specialist network:** Find verified professionals when you are ready to seek help.
-- **Mood awareness:** AI-driven insights help users recognize patterns and trends over time.
+## Core Use Cases
+### For Patients (Women & Youth)
+- Join anonymously and begin journaling without mandatory identity disclosure.
+- Use the AI assistant for emotional check-ins and reflective conversation.
+- Track moods and emotional trends through dashboards and reports.
+- Book professional sessions and share relevant insights when ready.
+- Access personalized wellness recommendations (yoga, breathing, reading).
+- Reach emergency contacts or safety resources if emotional risk is detected.
 
-## Core Experiences
+### For Mental Health Professionals
+- View consent-based reports and emotional trend summaries.
+- Track pre- and post-therapy changes for better treatment planning.
+- Manage schedules, appointments, and patient progress in a dashboard.
 
-1. **Cognitive Lab (AI Journaling)**
-   - Write freely and receive supportive, thoughtful responses.
-2. **Empathetic Chat**
-   - A gentle companion for late-night thoughts or immediate support.
-3. **Community Circles**
-   - Safe, moderated spaces built around shared experiences.
-4. **Standard & Incognito Accounts**
-   - Choose between professional care or total anonymity.
+### For Anonymous Community Members
+- Participate in moderated, stigma-free community circles.
+- Share experiences with peers facing similar challenges.
+- Maintain privacy while finding support and validation.
 
-## Tech Stack
+## Clinical Significance & Safety
+Aurova is designed to assist—not replace—clinical care. The platform focuses on early emotional expression, safe AI guidance, and responsible escalation when risk is detected. Journals and AI insights become clinically meaningful only when the user explicitly grants access to a professional.
 
+## System Architecture
+**High-level flow:**
+1. User actions (journaling, chatbot, scheduling) are submitted from the React UI.
+2. Node.js + Express APIs handle authentication, consent checks, and orchestration.
+3. AI services analyze text for sentiment, emotion, and safety indicators.
+4. MongoDB stores journals, reports, appointments, and consent settings.
+5. Results are returned to the frontend dashboards for users or doctors.
+
+**Core components:**
+- **Frontend:** Patient and doctor portals with separate dashboards.
+- **Backend:** REST APIs for authentication, journals, reports, and scheduling.
+- **AI Services:** LLM-based assistant plus emotion/sentiment analysis.
+- **Database:** MongoDB collections for users, journals, reports, and therapy sessions.
+- **Cloud-ready:** Designed for deployment on AWS or similar infrastructure.
+
+## Technology Stack
 - **Frontend:** React + TypeScript + Vite
-- **Styling:** Neo-brutalist UI with custom shadow utilities
-- **Backend:** Node.js + Express
-- **Database:** MongoDB Atlas
-- **AI/ML:** Google Gemini + Python embeddings service
-- **Auth:** Firebase Authentication + JWT session management
+- **Backend:** Node.js + Express.js
+- **Database:** MongoDB Atlas (cloud-ready)
+- **AI/ML:** Google Gemini + NLP/Sentiment analysis pipelines
+- **Auth:** Firebase Authentication + JWT
+- **Visualization:** Recharts dashboards
+
+## Module Overview
+- **User Management & Consent** – anonymous access and privacy controls.
+- **Journaling & Emotional Check-ins** – daily reflection and therapy logs.
+- **AI Emotion Analysis** – sentiment detection and trend reporting.
+- **Chatbot Support** – empathetic AI conversation and coping prompts.
+- **Therapy Scheduling** – appointment booking and reminders.
+- **Doctor Dashboard** – reports, trends, and feedback workflows.
+- **Reporting & Analytics** – weekly summaries, progress comparisons.
+- **Safety & Alerting** – threat detection for self-harm indicators.
+- **Community Support** – peer groups with moderated privacy.
+- **Personalized Recommendations** – yoga, wellness routines, book suggestions.
 
 ## Project Structure
-
 ```
 .
 ├── components/      # Reusable UI components
-├── views/           # Screen-level views
+├── views/           # Screen-level views (journal, community, dashboards)
 ├── services/        # API/client helpers
 ├── server/          # Express backend + AI orchestration
-└── App.tsx          # Frontend entry point
+├── App.tsx          # Frontend entry point
+└── Images/          # Sample UI screenshots
 ```
 
+## Screenshots
+![Landing page](Images/WhatsApp%20Image%202026-01-30%20at%2010.39.42%20PM.jpeg)
+![Journal & chat experience](Images/WhatsApp%20Image%202026-01-30%20at%2010.40.04%20PM.jpeg)
+![Dashboard views](Images/WhatsApp%20Image%202026-01-30%20at%2010.42.04%20PM.jpeg)
+![Community & wellness hub](Images/WhatsApp%20Image%202026-01-30%20at%2010.42.28%20PM.jpeg)
+
 ## Getting Started
-
 ### Prerequisites
-
 - Node.js 16+
 - MongoDB Atlas account
 - Google Gemini API key
 - Firebase project
 
 ### Install Dependencies
-
 ```bash
 # Frontend
 npm install
@@ -66,36 +122,25 @@ npm install
 ```
 
 ### Configure Environment
-
-Create a `.env` file in `server/` with:
-
+Create a `.env` file in `server/` with (use either `FIREBASE_SERVICE_ACCOUNT` or a file path):
 ```env
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 GEMINI_API_KEY=your_gemini_key
+FIREBASE_SERVICE_ACCOUNT_PATH=path/to/firebase-service-account.json
 ```
 
 ### Run Locally
-
 ```bash
 # Terminal 1: Backend
 cd server
-npm start
+node index.js
 
 # Terminal 2: Frontend
 cd ..
 npm run dev
 ```
 
-## Contributing
-
-We welcome thoughtful contributions that keep the platform safe, empathetic, and privacy-respecting. Please open an issue or pull request with context about the change and how it supports the mission.
-
 ## Contributors
-
+- me
 - [@sanhithaac](https://github.com/sanhithaac)
-- [@Seventie](https://github.com/Seventie)
-
-## Contact
-
-Questions or ideas? Reach out via GitHub: [Seventie](https://github.com/Seventie)
