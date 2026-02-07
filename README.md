@@ -9,6 +9,7 @@ Aurova is a privacy-first mental health support platform designed for women and 
 - [Clinical Significance & Safety](#clinical-significance--safety)
 - [System Architecture](#system-architecture)
 - [Technology Stack](#technology-stack)
+- [Tech Stack Icons](#tech-stack-icons)
 - [Module Overview](#module-overview)
 - [Project Structure](#project-structure)
 - [Screenshots](#screenshots)
@@ -67,6 +68,8 @@ Aurova is designed to assist—not replace—clinical care. The platform focuses
 - **Database:** MongoDB collections for users, journals, reports, and therapy sessions.
 - **Cloud-ready:** Designed for deployment on AWS or similar infrastructure.
 
+![Aurova architecture diagram](https://github.com/user-attachments/assets/7484e760-980f-4b3e-9f24-9d2a0299a1f1)
+
 ## Technology Stack
 - **Frontend:** React + TypeScript + Vite
 - **Backend:** Node.js + Express.js
@@ -74,6 +77,16 @@ Aurova is designed to assist—not replace—clinical care. The platform focuses
 - **AI/ML:** Google Gemini + NLP/Sentiment analysis pipelines
 - **Auth:** Firebase Authentication + JWT
 - **Visualization:** Recharts dashboards
+
+## Tech Stack Icons
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=fff)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=fff)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=000)
+![Google%20Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?logo=google&logoColor=fff)
 
 ## Module Overview
 - **User Management & Consent** – anonymous access and privacy controls.
@@ -103,6 +116,13 @@ Aurova is designed to assist—not replace—clinical care. The platform focuses
 ![Journal & chat experience](Images/WhatsApp%20Image%202026-01-30%20at%2010.40.04%20PM.jpeg)
 ![Dashboard views](Images/WhatsApp%20Image%202026-01-30%20at%2010.42.04%20PM.jpeg)
 ![Community & wellness hub](Images/WhatsApp%20Image%202026-01-30%20at%2010.42.28%20PM.jpeg)
+![Circle support hub](https://github.com/user-attachments/assets/8b5081e8-5ff2-4bf2-b207-dee1323dafa2)
+![Guided wellness cards](Images/WhatsApp%20Image%202026-01-30%20at%2010.40.25%20PM.jpeg)
+![Expert guidance frame](Images/WhatsApp%20Image%202026-01-30%20at%2010.40.40%20PM.jpeg)
+![Mood tracking frame](Images/WhatsApp%20Image%202026-01-30%20at%2010.41.28%20PM.jpeg)
+![Reports snapshot](Images/WhatsApp%20Image%202026-01-30%20at%2010.41.45%20PM.jpeg)
+![Doctor dashboard frame](Images/WhatsApp%20Image%202026-01-30%20at%2010.42.19%20PM.jpeg)
+![Wellness recommendations](Images/WhatsApp%20Image%202026-01-30%20at%2010.42.57%20PM.jpeg)
 
 ## Getting Started
 ### Prerequisites
