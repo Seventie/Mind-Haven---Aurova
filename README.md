@@ -4,7 +4,7 @@ Aurova is a privacy-first mental health support platform designed for women and 
 
 ## Contributors
 - [@sanhithaac](https://github.com/sanhithaac)
-- [@sanhithaac](https://github.com/seventie)
+- [@Seventie](https://github.com/seventie)
 
 ![Landing page](Images/WhatsApp%20Image%202026-01-30%20at%2010.39.42%20PM.jpeg)
 
